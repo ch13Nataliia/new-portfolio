@@ -19,46 +19,25 @@
   </head>
   <body>
     <!---header design-->
-    <header class="header" id="header">
-        <a href="#" class="nav__logo">Nataliia Tsirul</a>
-      <nav class="nav container">
 
-  <div class="nav__menu" id="nav-menu">
-    <ul class="nav__list">
-      <li class="nav__item">
-        <a href="#home" class="nav__link">Home</a>
-      </li>
-      <li class="nav__item">
-        <a href="#skills" class="nav__link">Skills</a>
-      </li>
-      <li class="nav__item">
-        <a href="#projects" class="nav__link">Projects</a>
-      </li>
-      <li class="nav__item">
-        <a href="#contact" class="nav__link">Contact Me</a>
-      </li>
-      <li class="nav__item">
-        <a href="/Nataliia Tsirul CV.pdf" target="_blank" class="nav__link">CV</a>
-      </li>
-    </ul>
-<!-- Close button -->
-    <div class="nav__close" id="nav-close">
-      <i class='bx bx-x' ></i>
-    </div>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <a href="#" class="logo">Nataliia</a>
+          <ul id="sidemenu">
+            <li><a href="#skills"  style="--i: 2" >Skills</a></li>
+            <li><a href="#projects" style="--i: 3">Projects</a></li>
+            <li><a href="#contact"  style="--i: 4">Contact Me</a></li>  
+            <li> <a href="/Nataliia Tsirul CV.pdf" target="_blank"  style="--i: 5">CV</a></li>
+            <i class='bx bxs-x-square' onclick="closemenu()" id="close"></i>
+          </ul>
+          <i class='bx bx-menu' onclick="openmenu()"></i>
+        </nav>
+      </div>
     </div>
 
-    <div class="nav__buttons">
-
-<div class="nav__toggle" id="nav-toggle">
-     <i class='bx bx-menu'></i>
-    </div>
-  </div>
 
     
-
-</nav>
-    </header>
-
     <!---home section design-->
     <section class="home" id="home">
 

@@ -1,31 +1,10 @@
-// SHOW MENU
-const navMenu = document.getElementById('nav-menu'),
-  navToggle = document.getElementById('nav-toggle'),
-  navClose = document.getElementById('nav-close');
-
-// MENU SHOW
-if (navToggle) {
-  navToggle.addEventListener('click', () => {
-    navMenu.classList.add('show-menu');
-  });
+const sidemenu = document.getElementById('sidemenu');
+function openmenu() {
+  sidemenu.style.right = '0';
 }
-
-// MENU HIDDEN
-
-if (navClose) {
-  navClose.addEventListener('click', () => {
-    navMenu.classList.remove('show-menu');
-  });
+function closemenu() {
+  sidemenu.style.right = '-200px';
 }
-// REMOVE MENU MOBILE
-const navLink = document.querySelectorAll('.nav__link');
-
-const linkAction = () => {
-  const navMenu = document.getElementById('nav-menu');
-  navMenu.classList.remove('show-menu');
-};
-navLink.forEach((n) => n.addEventListener('click', linkAction));
-
 //  EMAILJS
 const contactForm = document.getElementById('contact-form'),
   contactMessage = document.getElementById('contact-message');
@@ -47,7 +26,7 @@ const sendEmail = (e) => {
         setTimeout(() => {
           contactMessage.textContent = '';
         }, 5000);
-// reset
+        // reset
         contactForm.reset();
       },
       () => {
@@ -56,5 +35,3 @@ const sendEmail = (e) => {
     );
 };
 contactForm.addEventListener('submit', sendEmail);
-
-
