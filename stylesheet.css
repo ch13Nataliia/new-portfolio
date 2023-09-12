@@ -418,7 +418,7 @@ nav .bx {
     display: block;
   }
   .home-content h1 {
-    font-size: 50px;
+    font-size: 30px;
   }
   .home-content h3 {
     font-size: 15px;
@@ -655,6 +655,12 @@ nav .bx {
   }
   nav ul li a {
     font-size: 25px;
+  }
+  .project-info p {
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1.8;
+    margin-top: 5rem;
   }
 }
 
