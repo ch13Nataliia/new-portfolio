@@ -412,7 +412,7 @@ nav .bx {
 /*------extra small screens ---------*/
 @media (max-width: 475px) {
   .logo {
-    font-size: 18px;
+    font-size: 15px;
   }
   nav .bx {
     display: block;
@@ -464,9 +464,9 @@ nav .bx {
     font-size: 20px;
   }
   .home-content p {
-    font-size: 15px;
+    font-size: 10px;
     font-weight: 700;
-    line-height: 2.5rem;
+    line-height: 1.5rem;
   }
   .btn-box {
     font-size: 15px;
@@ -500,7 +500,7 @@ nav .bx {
 }
 @media (max-width: 640px) {
   .logo {
-    font-size: 18px;
+    font-size: 10px;
   }
   nav .bx {
     display: block;
@@ -522,6 +522,7 @@ nav .bx {
     text-align: center;
     display: flex;
     flex-direction: column;
+    color: #fff;
   }
   nav ul li a {
     color: #fff;
@@ -549,7 +550,7 @@ nav .bx {
     font-size: 23px;
   }
   .home-content p {
-    font-size: 18px;
+    font-size: 5px;
     font-weight: 700;
     line-height: 2.5rem;
   }
@@ -652,7 +653,6 @@ nav .bx {
   .projects p {
     font-size: 1.1rem;
     margin-top: 20px;
-
   }
   .contact-content h2 {
     font-size: 28px;
@@ -687,13 +687,13 @@ nav .bx {
     font-weight: 600;
     color: #41404c;
   }
-  
+
   nav ul li {
     display: inline-block;
     list-style: none;
     margin: 5px 10px;
   }
-  
+
   nav ul li a {
     color: #41404c;
     text-decoration: none;
@@ -710,10 +710,6 @@ nav .bx {
   nav ul i {
     font-size: 20px;
   }
-
-
-
-
 
   nav ul li a {
     color: #41404c;
@@ -762,7 +758,6 @@ nav .bx {
   .contact__button {
     font-size: 20px;
   }
-
 }
 @media (max-width: 1280px) {
   .logo {
