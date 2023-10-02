@@ -35,3 +35,19 @@ const sendEmail = (e) => {
     );
 };
 contactForm.addEventListener('submit', sendEmail);
+
+const emailLabel = document.getElementById('email-label');
+const emailFiled = document.getElementById('email-field');
+const emailError = document.getElementById('email-error');
+
+function validateEmail() {
+  emailLabel.style.bottom = "45px";
+
+  if (!emailFiled.value.match(/^[A-Za-z\._\-0-9]*[@][A-Za-z]*[\.][a-z]{2,4}$/)
+  ) {
+    emailError.innerHTML = 'Please enter a valid email';
+    return false;
+  }
+  emailError.innerHTML = '';
+  return true;
+}

@@ -101,7 +101,7 @@
 
         <div class="box-context">
           <div class="img-content">
-            <img src="./images/html-logo.png" alt="js-logo" />
+            <img src="./images/html5-logo.png" alt="js-logo" />
           </div>
         </div>
 
@@ -113,7 +113,7 @@
 
         <div class="box-context">
           <div class="img-content">
-            <img src="./images/sql-logo.png" alt="js-logo" />
+            <img src="./images/sql-icon.png" alt="js-logo" />
           </div>
         </div>
 
@@ -318,16 +318,18 @@
               />
             </div>
             <div class="contact__box">
-              <label for="email" class="contact__label">Email Address</label>
+              <label class="contact__label" id="email-label">Email Address</label>
               <input
                 type="email"
                 name="user_email"
                 class="contact__input"
-                id="email"
+                id="email-field"
+                onkeyup="validateEmail()"
                 required
                 placeholder="Your email"
-
+spellcheck="false"
               />
+              <span id="email-error"></span>
             </div>
 
             <div class="contact__box">
@@ -354,8 +356,8 @@
             </div>
             <p class="contact__message" id="contact-message"></p>
 
-            <button type="submit" class="contact__button button">
-              <p>Submit</p>
+            <button type="submit" class="contact__button">
+              <p>Send</p>
             </button>
           </div>
         </form>
