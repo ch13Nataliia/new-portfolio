@@ -583,6 +583,9 @@ nav .bx {
   .contact-list li a {
     font-size: 18px;
   }
+  .contact-form {
+    width: 400px;
+  }
 
   .footer-content i {
     font-size: 8px;
