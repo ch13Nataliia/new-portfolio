@@ -549,6 +549,7 @@ nav .bx {
     font-size: 15px;
     line-height: 2rem;
     margin-top: 20px;
+    font-family: 'Times New Roman', Times, serif;
   }
   .contact {
     flex-direction: column;
@@ -635,13 +636,14 @@ nav .bx {
     font-size: 15px;
   }
   .skills-title {
-    font-size: 22px;
+    font-size: 25px;
   }
   .projects h2 {
-    font-size: 20px;
+    font-size: 25px;
   }
   .projects p {
     font-weight: 15px;
+    font-family: 'Times New Roman', Times, serif;
   }
   .contact {
     flex-direction: column;
@@ -723,14 +725,15 @@ nav .bx {
     font-size: 15px;
   }
   .skills-title {
-    font-size: 22px;
+    font-size: 24px;
   }
   .projects h2 {
-    font-size: 22px;
+    font-size: 24px;
   }
   .projects p {
     font-size: 1rem;
     margin-top: 20px;
+    font-family: 'Times New Roman', Times, serif;
   }
   .contact {
     flex-direction: column;
@@ -739,7 +742,7 @@ nav .bx {
     font-size: 35px;
   }
   .contact-content p {
-    font-size: 25px;
+    font-size: 20px;
   }
   .contact-list li a {
     font-size: 25px;
@@ -752,17 +755,16 @@ nav .bx {
   }
 
 }
-
-@media (min-width: 1024px) {
+@media (max-width: 1024px){
   nav .logo {
-    font-size: 24px;
+    font-size: 20px;
   }
   nav ul li a {
-    font-size: 22px;
+    font-size: 20px;
     font-weight: 600;
   }
   .home-content {
-    max-width: 700px;
+    max-width: 900px;
     display: block;
   }
   .home-content h1 {
@@ -779,15 +781,44 @@ nav .bx {
   .btn-box {
     font-size: 15px;
   }
+}
+@media (min-width: 1024px) {
+  nav .logo {
+    font-size: 22px;
+  }
+  nav ul li a {
+    font-size: 22px;
+    font-weight: 600;
+  }
+  .home-content {
+    max-width: 900px;
+    display: block;
+  }
+  .home-content h1 {
+    font-size: 28px;
+  }
+  .home-content h3 {
+    font-size: 25px;
+  }
+  .home-content p {
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 3.5rem;
+  }
+  .btn-box {
+    font-size: 15px;
+  }
   .skills-title {
     font-size: 25px;
   }
   .projects h2 {
     font-size: 25px;
+    font-family: 'Times New Roman', Times, serif;
   }
   .projects p {
     font-size: 1rem;
     margin-top: 20px;
+    font-family: 'Times New Roman', Times, serif;
   }
 
   .contact {
@@ -800,14 +831,17 @@ nav .bx {
   .contact-form{
     width: 600px;
   }
-  .contact-content h2 {
-    font-size: 40px;
+  .contact-content {
+    margin-left: 50px;
   }
-  .contact-content p {
+  .contact-content h2 {
     font-size: 35px;
   }
-  .contact-list li a {
+  .contact-content p {
     font-size: 25px;
+  }
+  .contact-list li a {
+    font-size: 24px;
   }
   .footer-content i {
     font-size: 15px;
@@ -815,29 +849,31 @@ nav .bx {
 }
 @media (min-width: 1280px) {
   .home-content h1 {
-    font-size: 30px;
+    font-size: 45px;
   }
   .home-content h3 {
-    font-size: 28px;
+    font-size: 38px;
   }
   .home-content p {
-    font-size: 20px;
-    font-weight: 700;
-    line-height: 3rem;
+    font-size: 26px;
+    font-weight: 600;
+    line-height: 3.5rem;
   }
   nav ul li a {
-    font-size: 21px;
+    font-size: 31px;
   }
   .skills-title {
-    font-size: 30px;
+    font-size: 35px;
   }
   .projects h2 {
-    font-size: 30px;
+    font-size: 35px;
+    font-family: 'Times New Roman', Times, serif;
   }
   .projects p {
-    font-size: 0.9rem;
+    font-size: 1.2rem;
     margin-top: 10px;
     padding: 0 0;
+    font-family: 'Times New Roman', Times, serif;
   }
   .contact {
     display: flex;
