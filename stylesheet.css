@@ -360,15 +360,13 @@ label {
   color: #081b29;
   box-shadow: 0 0 20px aquamarine;
 }
-.contact-form {
-  width: 450px;
-}
+
 .contact-form form {
   position: relative;
   width: 100%;
   margin: 0 auto;
 }
-.contact-form form input,
+.contact-form  input,
 form textarea {
   width: 100%;
   padding: 14px;
@@ -381,6 +379,7 @@ form textarea {
   border-radius: 8px;
   margin-bottom: 10px;
 }
+
 #email-error {
 /* position: absolute; */
 font-size: 16px;
@@ -391,25 +390,7 @@ color: red;
   resize: none;
   height: 240px;
 }
-/* .contact-form .submit {
-  display: inline-block;
-  font-size: 26px;
-  background-color: aquamarine;
-  color: #000;
-  width: 160px;
-  transform: all 0.45s ease;
-}
 
-.contact-form .submit:hover {
-  cursor: pointer;
-  transform: scale(1.1);
-}
-
-.contact__button {
-  width: 100px;
-  border-radius: 10px;
-  background-color: aquamarine;
-} */
 .contact-form button {
   width: 100px;
 }
@@ -583,7 +564,6 @@ nav .bx {
   .contact-list li a {
     font-size: 18px;
   }
-
   .footer-content i {
     font-size: 8px;
     padding: 4px;
@@ -758,7 +738,6 @@ nav .bx {
   .contact {
     flex-direction: column;
   }
-
   .contact-content h2 {
     font-size: 25px;
   }
@@ -768,12 +747,13 @@ nav .bx {
   .contact-list li a {
     font-size: 20px;
   }
+    .contact__button {
+    font-size: 15px;
+  }
   .footer-content i {
     font-size: 15px;
   }
-  .contact__button {
-    font-size: 15px;
-  }
+
 }
 
 @media (max-width: 1024px) {
@@ -816,11 +796,6 @@ nav .bx {
   .contact {
     flex-direction: column;
   }
-  .contact-form form {
-    /* position: absolute; */
-    width: 800px;
-    margin: 0 auto;
-  }
   .contact-content h2 {
     font-size: 25px;
   }
@@ -830,7 +805,6 @@ nav .bx {
   .contact-list li a {
     font-size: 20px;
   }
-
   .footer-content i {
     font-size: 15px;
   }
@@ -863,12 +837,6 @@ nav .bx {
   }
   .contact {
     flex-direction: column;
-  }
-
-  .contact-form form {
-    width: 100%;
-    margin-right: 150px;
-    /* margin: 0 auto; */
   }
   .contact-content h2 {
     font-size: 28px;
