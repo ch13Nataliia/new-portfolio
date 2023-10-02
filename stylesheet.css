@@ -361,7 +361,7 @@ label {
   box-shadow: 0 0 20px aquamarine;
 }
 .contact-form {
-  width: 600px;
+  width: 450px;
 }
 .contact-form form {
   position: relative;
@@ -583,9 +583,6 @@ nav .bx {
   .contact-list li a {
     font-size: 18px;
   }
-  .contact-form {
-    width: 400px;
-  }
 
   .footer-content i {
     font-size: 8px;
@@ -681,9 +678,6 @@ nav .bx {
   .contact-list li a {
     font-size: 20px;
   }
-  .contact-form {
-    width: 600px;
-  }
   .footer-content i {
     font-size: 10px;
   }
@@ -764,11 +758,7 @@ nav .bx {
   .contact {
     flex-direction: column;
   }
-  .contact-form form {
-    /* position: absolute; */
-    width: 700px;
-    margin: 0 auto;
-  }
+
   .contact-content h2 {
     font-size: 25px;
   }
