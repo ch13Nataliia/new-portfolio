@@ -274,14 +274,13 @@ nav ul i {
   position: relative;
   background-image: url(/images/montenegro-Background.jpg);
   background-size: cover;
-  /* display: grid;
-  grid-template-columns: repeat(250px, 1fr); */
-  grid-template-columns: 350px max-content max-content;
+  display: flex;
+  flex-direction: row;
   row-gap: 0;
   align-items: center;
-  /* gap: 2.5rem; */
+  gap: 2.5rem;
   isolation: isolate;
-  /* overflow: hidden; */
+  overflow: hidden;
   text-align: center;
   padding: 30px 20px 30px 20px;
 }
@@ -295,12 +294,8 @@ nav ul i {
   opacity: 0.6;
   border-radius: 5px;
 }
-
-.contact__form {
-  flex-basis: 35%;
-}
-.contact-form {
-  flex-basis: 60%;
+label {
+  font-size: 20px;
 }
 .contact-content h2 {
   position: relative;
@@ -359,16 +354,19 @@ nav ul i {
 
 .contact-form form {
   position: relative;
+  width: 100%;
+  margin: 0 auto;
 }
 .contact-form form input,
 form textarea {
   width: 100%;
   padding: 14px;
-  background: rgb(206, 201, 201);
-  color: #fff;
+  background: rgb(229, 226, 226);
+  color: #111010;
   border: none;
   outline: none;
-  font-size: 15px;
+  font-size: 20px;
+  font-weight: 700;
   border-radius: 8px;
   margin-bottom: 10px;
 }
@@ -379,10 +377,10 @@ form textarea {
 }
 .contact-form .submit {
   display: inline-block;
-  font-size: 16px;
+  font-size: 13px;
   background-color: aquamarine;
   color: #000;
-  width: 160px;
+  /* width: 160px; */
   transform: all 0.45s ease;
 }
 
@@ -390,19 +388,28 @@ form textarea {
   cursor: pointer;
   transform: scale(1.1);
 }
+
 .contact__button {
-  font-size: 25px;
-  background-color: aquamarine;
   border-radius: 10px;
+  background-color: aquamarine;
+}
+.contact__button p {
+  font-size: 25px;
+  padding: 10px;
 }
 
 .footer-content {
+  display: flex;
+  justify-content: center;
   width: 100%;
-  font-size: 25px;
+  font-size: 22px;
   height: 50px;
   color: grey;
-  text-align: center;
   background-color: lightgray;
+}
+.footer-content i {
+  font-size: 15px;
+  padding: 6px;
 }
 
 nav .bx {
@@ -467,7 +474,7 @@ nav .bx {
   nav .logo {
     font-size: 20px;
   }
-  nav ul li a{
+  nav ul li a {
     font-size: 15px;
   }
   nav .bx {
@@ -520,7 +527,7 @@ nav .bx {
   }
   .home-content p {
     font-size: 13px;
-    font-weight: 700;
+    font-weight: 600;
     line-height: 2rem;
   }
   .btn-box {
@@ -537,6 +544,9 @@ nav .bx {
     line-height: 2rem;
     margin-top: 20px;
   }
+  .contact {
+    flex-direction: column;
+  }
   .contact-content h2 {
     font-size: 25px;
   }
@@ -549,16 +559,23 @@ nav .bx {
   .footer-content i {
     font-size: 15px;
   }
-  .contact__button {
-    font-size: 15px;
+  .contact__button p {
+    font-size: 12px;
   }
-
+  .footer-content i {
+    font-size: 8px;
+    padding: 4px;
+  }
+  .footer-content p {
+    font-size: 15px;
+    padding: 5px;
+  }
 }
 @media (max-width: 640px) {
   nav .logo {
     font-size: 22px;
   }
-  nav ul li a{
+  nav ul li a {
     font-size: 17px;
   }
   nav .bx {
@@ -626,6 +643,14 @@ nav .bx {
   .projects p {
     font-weight: 15px;
   }
+  .contact {
+    flex-direction: column;
+  }
+  .contact-form form {
+    /* position: absolute; */
+    width: 530px;
+    margin: 0 auto;
+  }
   .contact-content h2 {
     font-size: 25px;
   }
@@ -635,20 +660,19 @@ nav .bx {
   .contact-list li a {
     font-size: 20px;
   }
+  .contact__button p {
+    font-size: 18px;
+    padding: 10px;
+  }
   .footer-content i {
     font-size: 15px;
   }
-  .contact__button {
-    font-size: 15px;
-  }
-  
 }
 @media (max-width: 780px) {
-
   nav .logo {
     font-size: 22px;
   }
-  nav ul li a{
+  nav ul li a {
     font-size: 17px;
   }
   nav .bx {
@@ -717,6 +741,14 @@ nav .bx {
     font-size: 1rem;
     margin-top: 20px;
   }
+  .contact {
+    flex-direction: column;
+  }
+  .contact-form form {
+    /* position: absolute; */
+    width: 700px;
+    margin: 0 auto;
+  }
   .contact-content h2 {
     font-size: 25px;
   }
@@ -732,60 +764,72 @@ nav .bx {
   .contact__button {
     font-size: 15px;
   }
-  
 }
 
 @media (max-width: 1024px) {
-nav .logo {
-  font-size: 24px;
-}
-nav ul li a {
-  font-size: 22px;
-  font-weight: 600;
-}
-.home-content {
-  max-width: 700px;
-  display: block;
-}
-.home-content h1 {
-  font-size: 28px;
-}
-.home-content h3 {
-  font-size: 25px;
-}
-.home-content p {
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 3.5rem;
-}
-.btn-box {
-  font-size: 15px;
-}
-.skills-title {
-  font-size: 25px;
-}
-.projects h2 {
-  font-size: 25px;
-}
-.projects p {
-  font-size: 1rem;
-  margin-top: 20px;
-}
-.contact-content h2 {
-  font-size: 25px;
-}
-.contact-content p {
-  font-size: 15px;
-}
-.contact-list li a {
-  font-size: 20px;
-}
-.footer-content i {
-  font-size: 15px;
-}
-.contact__button {
-  font-size: 15px;
-}
+  nav .logo {
+    font-size: 24px;
+  }
+  nav ul li a {
+    font-size: 22px;
+    font-weight: 600;
+  }
+  .home-content {
+    max-width: 700px;
+    display: block;
+  }
+  .home-content h1 {
+    font-size: 28px;
+  }
+  .home-content h3 {
+    font-size: 25px;
+  }
+  .home-content p {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 3.5rem;
+  }
+  .btn-box {
+    font-size: 15px;
+  }
+  .skills-title {
+    font-size: 25px;
+  }
+  .projects h2 {
+    font-size: 25px;
+  }
+  .projects p {
+    font-size: 1rem;
+    margin-top: 20px;
+  }
+
+  .contact {
+    flex-direction: column;
+  }
+  .contact-form form {
+    /* position: absolute; */
+    width: 800px;
+    margin: 0 auto;
+  }
+  .contact-content h2 {
+    font-size: 25px;
+  }
+  .contact-content p {
+    font-size: 12px;
+  }
+  .contact-list li a {
+    font-size: 20px;
+  }
+  .contact__button p {
+    font-size: 15px;
+  }
+
+  .footer-content i {
+    font-size: 15px;
+  }
+  .contact__button {
+    font-size: 15px;
+  }
 }
 @media (max-width: 1280px) {
   .home-content h1 {
@@ -813,351 +857,13 @@ nav ul li a {
     margin-top: 10px;
     padding: 0 0;
   }
-  .contact-content h2 {
-    font-size: 28px;
-  }
-  .contact-content p {
-    font-size: 25px;
-  }
-  .contact-list li a {
-    font-size: 25px;
-  }
-  .footer-content i {
-    font-size: 18px;
-  }
-  .contact__button {
-    font-size: 20px;
-  }
-  
-}
- /* @media (max-width: 399px) {
-
-
-  #close {
-    color: #d50606;
-  }
-  nav ul {
-    background: #8d8d8e;
-    position: fixed;
-    top: 0;
-    right: -300px;
-    width: 200px;
-    height: 250px;
-    padding-top: 50px;
-    z-index: 2;
-    transition: right 0.5s;
-    text-align: center;
-    display: flex;
+  .contact {
     flex-direction: column;
   }
-  nav ul li a {
-    color: #fff;
-    font-size: 15px;
-  }
-  nav ul li {
-    display: block;
-    margin: auto 0;
-  }
-
-  nav ul .bx {
-    position: absolute;
-    top: 25px;
-    left: 25px;
-    cursor: default;
-  }
-
-  .home {
-    display: block;
-  }
-  .home-content {
-    padding-right: 10px;
-  }
-  .home-content h1 {
-    font-size: 25px;
-  }
-  .home-content h3 {
-    font-size: 20px;
-  }
-  .home-content p {
-    font-size: 10px;
-    font-weight: 700;
- 
-  }
-  .btn-box {
-    font-size: 10px;
-    justify-content: center;
-  }
-  .skills-title {
-    font-size: 20px;
-  }
-  .projects h2 {
-    font-size: 20px;
-  }
-  .projects p {
-    font-size: 1.3rem;
-    margin-top: 20px;
-  }
-  .contact-content h2 {
-    font-size: 25px;
-  }
-  .contact-content p {
-    font-size: 15px;
-  }
-  .contact-list li a {
-    font-size: 20px;
-  }
-  .footer-content i {
-    font-size: 15px;
-  }
-  .contact__button {
-    font-size: 15px;
-  }
-}
-
-
-@media (max-width: 640px) {
- nav .logo {
-    font-size: 20px;
-  }
-  nav .bx {
-    display: block;
-    font-size: 22px;
-  }
-  #close {
-    color: #fff;
-  }
-  nav ul {
-    background: #8d8d8e;
-    position: fixed;
-    top: 0;
-    right: -300px;
-    width: 200px;
-    height: 250px;
-    padding-top: 50px;
-    z-index: 2;
-    transition: right 0.5s;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    color: #fff;
-  }
-  nav ul li a {
-    color: #fff;
-    font-size: 15px;
-  }
-  nav ul li {
-    display: block;
-    margin: auto 0;
-  }
-
-  nav ul .bx {
-    position: absolute;
-    top: 25px;
-    left: 25px;
-    cursor: default;
-  }
-  .home-content {
-    padding-right: 20px;
-    font-size: 10px;
-  }
-  .home-content h1 {
-    font-size: 28px;
-  }
-  .home-content h3 {
-    font-size: 23px;
-  }
-  .home-content p {
-    font-size: 10px;
-    font-weight: 700;
-    line-height: 2rem;
-  }
-  .btn-box {
-    font-size: 10px;
-    justify-content: center;
-  }
-  .skills-title {
-    font-size: 23px;
-  }
-  .projects h2 {
-    font-size: 23px;
-  }
-  .projects p {
-    font-size: 0.9rem;
-    margin-top: 10px;
-    padding: 0 0;
-  }
-  .contact-content h2 {
-    font-size: 25px;
-  }
-  .contact-content p {
-    font-size: 18px;
-  }
-  .contact-list li a {
-    font-size: 20px;
-  }
-  .footer-content i {
-    font-size: 10px;
-  }
-  .contact__button {
-    font-size: 15px;
-  }
-}
-
-
-
-@media  (max-width: 768px) {
-  .logo {
-    font-size: 22px;
-  }
-  nav .bx {
-    display: block;
-    font-size: 22px;
-  }
-  #close {
-    color: #fff;
-  }
-  nav ul {
-    background: #8d8d8e;
-    position: fixed;
-    top: 0;
-    right: -300px;
-    width: 200px;
-    height: 250px;
-    padding-top: 50px;
-    z-index: 2;
-    transition: right 0.5s;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-  }
-  nav ul li a {
-    color: #fff;
-    font-size: 15px;
-  }
-  nav ul li {
-    display: block;
-    margin: auto 0;
-  }
-
-  nav ul .bx {
-    position: absolute;
-    top: 25px;
-    left: 25px;
-    cursor: default;
-  }
-
-  .home-content {
-    padding-right: 20px;
-  }
-  .home-content h1 {
-    font-size: 30px;
-  }
-  .home-content h3 {
-    font-size: 25px;
-  }
-  .home-content p {
-    font-size: 20px;
-    font-weight: 700;
-    line-height: 3rem;
-  }
-  .btn-box {
-    font-size: 18px;
-    justify-content: center;
-  }
-  .skills-title {
-    font-size: 25px;
-  }
-  .projects h2 {
-    font-size: 25px;
-  }
-  .projects p {
-    font-size: 1.1rem;
-    margin-top: 20px;
-  }
-  .contact-content h2 {
-    font-size: 28px;
-  }
-  .contact-content p {
-    font-size: 18px;
-  }
-  .contact-list li a {
-    font-size: 22px;
-  }
-  .footer-content i {
-    font-size: 15px;
-  }
-  .contact__button {
-    font-size: 18px;
-  }
-}
-
-
-
-@media (max-width: 1024px) {
-  nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    color: #41404c;
-  }
-  nav .logo {
-    font-size: 25px;
-    font-weight: 600;
-    color: #41404c;
-  }
-
-  nav ul li {
-    display: inline-block;
-    list-style: none;
-    margin: 5px 10px;
-  }
-
-  nav ul li a {
-    color: #41404c;
-    text-decoration: none;
-    font-size: 20px;
-    font-weight: 600;
-  }
-  nav ul a:hover {
-    color: aquamarine;
-    transition: 0.3s all;
-  }
-  nav i {
-    font-size: 30px;
-  }
-  nav ul i {
-    font-size: 20px;
-  }
-
-  nav ul li a {
-    color: #41404c;
-    font-size: 15px;
-  }
-  .home-content h1 {
-    font-size: 35px;
-  }
-  .home-content h3 {
-    font-size: 30px;
-  }
-  .home-content p {
-    font-size: 18px;
-    font-weight: 600;
-    line-height: 3.5rem;
-  }
-  .btn-box {
-    font-size: 20px;
-  }
-  .skills-title {
-    font-size: 28px;
-  }
-  .projects h2 {
-    font-size: 28px;
-  }
-  .projects p {
-    font-size: 0.9rem;
-    margin-top: 10px;
-    padding: 0 0;
+  .contact-form form {
+    /* position: absolute; */
+    width: 100%;
+    margin: 0 auto;
   }
   .contact-content h2 {
     font-size: 28px;
@@ -1171,63 +877,4 @@ nav ul li a {
   .footer-content i {
     font-size: 18px;
   }
-  .contact__button {
-    font-size: 20px;
-  }
 }
-
-
-@media (max-width: 1280px) {
-  nav .logo {
-    font-size: 25px;
-  }
-  nav ul li a {
-    color: #41404c;
-    font-size: 20px;
-  }
-
-  .skills-title {
-    font-size: 30px;
-  }
-  .projects h2 {
-    font-size: 30px;
-  }
-  .projects p {
-    font-size: 0.9rem;
-    margin-top: 10px;
-    padding: 0 0;
-  }
-  .contact-content h2 {
-    font-size: 28px;
-  }
-  .contact-content p {
-    font-size: 25px;
-  }
-  .contact-list li a {
-    font-size: 25px;
-  }
-  .footer-content i {
-    font-size: 18px;
-  }
-  .contact__button {
-    font-size: 20px;
-  }
-}
-@media (max-width: 1536px) {
-  .logo {
-    font-size: 26px;
-  }
-  nav ul li a {
-    color: #41404c;
-    font-size: 22px;
-  }
-  .home-content p {
-    font-size: 50px;
-
-  }
-  .projects p {
-    font-size: 1rem;
-    margin-top: 10px;
-    margin-top: 30px;
-  }} 
- */
